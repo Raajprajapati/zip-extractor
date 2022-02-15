@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+/* css reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* navbar styling */
+
+.navbar{
+    color: white;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 3rem;
+    align-items: center;
+    min-height: 5rem;
+    
+}
+.navbar .logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* main body styling */
+
+.main{
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+}
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+#action{
+    display: grid;
+    place-items: center;
+    width: 60%;
+    background-color: #fff;
+    border:1px solid #d6d6d6;
+}
+
+.banner{
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+
+/* file input box styling */
+
+.input input{
+    display: none;
+}
+.input{
+    background-color: #fff;
+    width: 100%;
+    height: 20rem;
+    display: grid;
+}
+.input label{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.input label p{
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2962ff;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+}
+.input label p:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.input label small{
+    background-color: #2962ff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.input span{
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    color:#707070;
+    text-align: center;
+}
+
+/* js tree styling */
+
+#jstree_wrapper{
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+}
+#jstree{
+    width: 100%;
+    margin-top: 2rem;
+    display: none;
+}
+#success{
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    display: none;
+}
+
+
+/* loading section styling */
+#loading_wrapper{
+    width: 80%;
+    height: 20rem;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+    padding: 5rem 0;
+
+}
+
+#loading_wrapper div{
+    width: 100;
+    border: 1px solid #2962ff;
+}
+#loading{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    height: 2rem;
+    background-image: url("../imgs/load.jpg");
+}
+
+/* error box  styling*/
+#error {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
+    display: none;
+}
+
+#error .message{
+    font-size: 3rem;
+    color: #fd0606;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+#error .message div{
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+#close{
+    background-color: #2962ff;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* action buttons styling */
+
+#action_btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    display: none;
+}
+
+#action_btns button{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #2962ff;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+}
+
+#action_btns #extract{
+    background-color: #fff;
+    color: #2962ff;
+}
+
+
+@media screen and (max-width:700px){
+    #action{
+       width: 80%;
+    }
+
+}
+
+@media screen and (max-width:612px){
+    #action{
+       width: 100%;
+    }
+    #action_btns{
+        flex-direction: column;
+    }
+    #action_btns button{
+        margin: 0.5rem 0;
+    }
+    .main{
+        padding: 1rem;
+    }
+}
+#pdf_previews{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#pdf_previews,.pdfs{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.pdf{
+    width: 30rem;
+    height: 20rem;
+    overflow: hidden;
+    /* border: 2px solid grey; */
+    margin: 2rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.pdf::after{
+    width: 30rem;
+    height: 20rem;
+    content: "";
+    background-color: #000000;
+    margin: 2rem;
+    cursor: pointer;
+}
+.pdf:hover{
+    transform: scale(1.2);
+    margin: 2rem;
+    cursor: pointer;
+    opacity: 0.9;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    cursor: pointer;  
+    scrollbar-color: red;  
+}

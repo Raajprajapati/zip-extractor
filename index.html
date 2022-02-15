@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Sample Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner">
+            Upload any PDF file
+        </div>
+        <div id="action">
+            <div class="input" id="input">
+                <label for="file">
+                    <p>Choose file <small>from your computer</small></p>
+                </label>
+                <input type="file" name="file" id="file" accept=".zip" />
+                <span>
+                    or drag and drop a file here...
+                </span>
+            </div>
+        </div>
+        <div id="pdf_previews">
+            <div class="head">PDF Previews</div>
+            <div class="pdfs">
+            <div class="pdf">
+                <h1>PDF 1</h1>
+                <iframe src="http://www.africau.edu/images/default/sample.pdf" scrolling="no">
+                </iframe>
+            </div>
+
+            <div class="pdf">
+                <h1>PDF 2</h1>
+                <iframe src="http://www.africau.edu/images/default/sample.pdf" scrolling="no" seamless="seamless">
+                </iframe>
+            </div>
+
+            <div class="pdf">
+                <h1>PDF 3</h1>
+                <iframe src="http://www.africau.edu/images/default/sample.pdf" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+
+        </div>
+</body>
+<script type="text/javascript" src="./js/zip-full.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
